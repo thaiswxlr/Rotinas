@@ -1,67 +1,34 @@
-package parte3;
+package roteiro7.parte1;
 
-public class Ligacao {
 
-    private String numOrigem;
-    private String numDestino;
-	private String localOrigem;	
-    private String localDestino;
-	private Tempo horaInicio;
-	private Tempo horaFim;
-   
+public class Principal {
+    public static void main(String[] args) {
+       
+     Aluno[] listaAlunos = new Aluno [3];
+     
+     Aluno aluno01 = new Aluno (111,"Jose","Sistemas de informação", 2019, 0, null);
+     Aluno aluno02 = new Aluno (122,"Maria","Engenharia Civil", 2020, 0, null);
+     Aluno aluno03 = new Aluno (133,"Carlos","Química", 2021, 0, null);
+     
+
+     listaAlunos[0] = aluno01;
+     listaAlunos[1] = aluno02;
+     listaAlunos[2] = aluno03;
+
+     System.out.println("Listando os alunos");
+     System.out.println("*********************************");
+     for (int i = 0; i < 3; i++);
     
-    
-        public Ligacao(String numOrigem, String numDestino, String localOrigem, String localDestino, Tempo horaInicio){
-            this.numOrigem = numOrigem;
-            this.numDestino = numDestino;
-            this.localOrigem = localOrigem;
-            this.localDestino = localDestino;
-            this.horaInicio = horaInicio;
-            this.horaFim = null;
-}
+     System.out.println("Matricula: "+ listaAlunos[i].getMatricula());
+     System.out.println("Nome: "+ listaAlunos[i].getNome());
+     System.out.println("Curso: "+ listaAlunos[i].getCurso());
+     System.out.println("Ano Ingresso: "+ listaAlunos[i].get.AnoIngresso());
+     System.out.println("************************************");
 
-   
-    public String getnumOrigem() {
-    return numOrigem;
-}
-    public void setNumOrigem(String numOrigem) {
-    this.numOrigem = numOrigem;
-}
 
-    public String getnumDestino(){
-        return numDestino;
-    }
-    public void setNumDestino (String numDestino){
-        this.numDestino = numDestino;
-    }
 
-    public String getlocalOrigem (){
-        return localOrigem;
-    }
-    public void setLocalOrigem (String localOrigem){
-        this.localOrigem = localOrigem;
-    }
+     
 
-    public String getlocalDestino (){
-        return localOrigem;
     }
-    public void setLocalDestino (String localDestino){
-        this.localDestino = localDestino;
-    }
-    
-    public Tempo gethorainicio (){
-        return horaInicio;
-    }
-    public void setHoraInicio (Tempo horaInicio){
-        this.horaInicio = horaInicio;
-    }
-
-    public Tempo gethoraFim (){
-        return horaFim;
-    }
-    public void setHoraFim(Tempo horaFim){
-        this.horaFim = horaFim;
-    }
-    
 
 }
